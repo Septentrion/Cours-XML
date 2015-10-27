@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DTD externe -->
+<!-- Entité paramètre pour les enfants à ajouter à l'élément book -->
+<!ENTITY % book.entries "">
+<!ELEMENT bibliography (book)+>
+<!ELEMENT book (title, author, year, publisher, isbn %book.entries;)>
+<!ATTLIST book key NMTOKEN #REQUIRED>
+<!ATTLIST book lang (fr | en) #IMPLIED>
+<!ELEMENT title     (#PCDATA)>
+<!ELEMENT author    (#PCDATA)>
+<!ELEMENT year      (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT isbn      (#PCDATA)>
+<!ENTITY aka "also known as">

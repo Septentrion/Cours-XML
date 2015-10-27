@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<book key="Michard01" lang="fr">
+	<title>XML langage et applications</title>
+	<author>Alain Michard</author>
+	<year>2001</year>
+	<publisher>Eyrolles</publisher>
+	<isbn>2-212-09206-7</isbn>
+	<url>http://www.editions-eyrolles/livres/michard/</url>
+</book>

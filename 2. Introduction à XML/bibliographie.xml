@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- déclaration de DTD externe -->
+<!DOCTYPE bibliography SYSTEM "bibliography.dtd" >
+
+<!-- Elément racine -->
+<bibliography xmlns:xi="http://www.w3.org/2001/XInclude">
+
+	<!-- Elément importé d'un fichier externe avec XInclude -->
+	<xi:include href="introduction.xml" parse="xml"/>
+
+	<!-- Elément book avec deux attributs key et lang -->
+	<book key="Zeldman03" lang="en">
+		<title>Designing with web standards</title>
+		<author>Jeffrey Zeldman</author>
+		<year>2003</year>
+		<publisher>New Riders</publisher>
+		<isbn>0-7357-1201-8</isbn>
+	</book>
+	...
+</bibliography>
