@@ -1,0 +1,47 @@
+<!DOCTYPE 'html' lang='fr' xml:lang='fr'>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript">
+			function getElementByXpath(xml, path) {
+				console.log(xml);
+  				return xml.evaluate
+  					(
+  					 path, 
+  					 xml, 
+  					 null, 
+  					 XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+				};
+
+			window.onload = function() {
+				console.log('Loaded');
+				var req = new XMLHttpRequest();
+				req.onreadystatechange = function () {
+					if (req.readyState == 1 ) {
+						console.log('En attente de cible')
+					};
+					if (req.readyState == 2 ) {
+						console.log('Envoyé')
+					};
+					if (req.readyState == 4) {
+						if(req.status == 200 || req.status == 0) {
+							var doc = req.responseXML;
+							console.log(doc.childNodes);
+							var title = getElementByXpath(doc, '//book[1]/title[1]');
+							console.log(title.childNodes.item(0).textContent);
+						}
+						else
+							console.log("Erreur pendant le chargement de la page.");
+					}
+				};
+				req.open('GET', 'book.xml', true);
+				req.overrideMimeType('text/xml');
+				req.send(null);
+				console.log("Done");
+			};
+		</script>
+	</head>
+	<body>
+		<h1>TESTE AJAX</h1>
+	</body>
+</html>

@@ -50,20 +50,20 @@ Une liste attributs se déclare ainsi : `<!ATTLIST ... >`
 * La liste doit faire référence à un élément de la DTD et énumère la liste des attributs autorisés.
 * Un attribut est lui-même décrit par trois parties : un nom (NAME), une valeur et un statut (#REQUIRED, #FIXED ou #IMPLIED)
 * Une valeur peut être décrite de la manière suivante :
-** CDATA : la valeur est du texte
-** NMTOKEN : la valeur est un NMTOKEN
-** NMTOKENS : la valeur est un e suite de NMTOKEN
-** ID : l'attribut représente un identificateur
-** IDREF : l'attribut faire référence à un élément ayant un attribut de type ID
-** IDREFS : l'attribut faire référence à plusieurs élémentq ayant un attribut de type ID
-** NOTATION : la veleur est une notation
-** ENTITY : la valeur est une entité externe
-** ENTITIES : la valeur est une collection d'entités externes
-** <EXPR> : Toute expression sur une collection finie de valeurs
+  * CDATA : la valeur est du texte
+  * NMTOKEN : la valeur est un NMTOKEN
+  * NMTOKENS : la valeur est un e suite de NMTOKEN
+  * ID : l'attribut représente un identificateur
+  * IDREF : l'attribut faire référence à un élément ayant un attribut de type ID
+  * IDREFS : l'attribut faire référence à plusieurs élémentq ayant un attribut de type ID
+  * NOTATION : la veleur est une notation
+  * ENTITY : la valeur est une entité externe
+  * ENTITIES : la valeur est une collection d'entités externes
+  * <EXPR> : Toute expression sur une collection finie de valeurs
 * Le statut peut quant à lui valoir :
-** #REQUIRED : l'attribut est obligatoire
-** #IMPLIED : l'attribut est facultatif
-** #FIXED : la DTD doit alors préciser la valeur par défaut de l'attribut si celui-ci n'est pas présent
+ * #REQUIRED : l'attribut est obligatoire
+  * #IMPLIED : l'attribut est facultatif
+  * #FIXED : la DTD doit alors préciser la valeur par défaut de l'attribut si celui-ci n'est pas présent
 
 ## Les entités
 
