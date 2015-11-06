@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="elements.xsl" type="text/xsl" ?>
+
+<source>
+
+<text size="H1">Header1</text>
+<text size="H3">Header3</text>
+<text size="b">Bold text</text>
+<text size="sub">Subscript</text>
+<text size="sup">Superscript</text>
+
+</source> 

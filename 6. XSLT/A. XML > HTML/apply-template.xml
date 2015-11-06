@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="apply-template.xsl" type="text/xsl" ?>
+
+<source>
+	<employee>
+		<firstName>Joe</firstName>
+		<surname>Smith</surname>
+	</employee>
+</source> 

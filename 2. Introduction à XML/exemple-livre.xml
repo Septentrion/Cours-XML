@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-livre
-armoire
-emplacement
-auteur
-titre
-editeur
-annee de parution
-isbn
-genre
-langue
-traducteur
-resume
-emprunt
-exemplaires
-
+<bibliotheque>
+	<auteurs>
+		<auteur id="dupont"><prenom>Jo</prenom><nom>Dupont</nom></auteur>
+	</auteurs>
+	<livres>
+		<livre>
+			<titre>Titre</titre>
+			<auteur ref="dupont"></auteur>
+			<resume>sdgdgdfgdfgdfgdfgdfs dfgdsgdfgdf dfgdfsg</resume>
+			<genre></genre>
+			<localisation emplacement="21">
+				<armoire></armoire>
+			</localisation>
+			<langue>
+				<l>anglais</l>
+				<traducteur>M. X</traducteur>
+			</langue>
+			<emprunt exemplaires="5">
+				<emprunteur>
+					<nom></nom>
+					<retour></retour>
+				</emprunteur>
+			</emprunt>
+			<publication>
+				<editeur></editeur>
+				<date></date>
+				<isbn></isbn>
+			</publication>
+		</livre>
+	</livres>
+</bibliotheque>
