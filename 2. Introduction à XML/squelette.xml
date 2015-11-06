@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<html>
+	<head></head>
+	<body>
+		<h1>Dessin SVG</h1>
+		<main id="svg"></main>
+	</body>
+</html>
