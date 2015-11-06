@@ -5,6 +5,7 @@ $flux = array('http://rss.lemonde.fr/c/205/f/3060/index.rss', 'http://liberation
 $texte = $_GET['texte'];
 // Créer un doc XML
 $doc = new DOMDocument();
+$target = new DOMDocument();
 
 foreach ($flux as $f) {
 	// Récupération du flux
@@ -31,8 +32,13 @@ foreach ($flux as $f) {
 		$selection['titre'] = $titre->nodeValue;
 		$selection['lien'] = $lien->nodeValue;
 		$selection['image'] = $image->getAttribute('url');
+
+		$node = $newdoc->importNode($entry, true);
+		$target->appendChild($node);
 	}
 }
+
+target->save('veille.xml');
 
 ?>
 <h1>Dépêches contenant : <?php $texte ?></h1>
